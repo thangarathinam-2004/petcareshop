@@ -1,0 +1,542 @@
+/* ---------------- RESET ---------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ---------------- NAVBAR ---------------- */
+header {
+  background: #111;
+  color: #fff;
+  padding: 10px 0;
+}
+.logo{
+  font-weight: bolder;
+  color: #ff5722;
+  font-size: larger;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #111;
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+}
+.nav-links a i {
+  margin-right: 8px;
+  font-size: 16px;
+}
+.menu-toggle{
+  display: none;
+}
+
+/* ---------------- HERO SECTION ---------------- */
+.signup-btn {
+  background: #ff5722;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.btn {
+  padding: 12px 25px;
+  background: #ff5722;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #e64a19;
+}
+.hero{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  background: #222;
+  color: #fff;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  margin-bottom: 20px;
+}
+
+.hero-text .service-btn {
+  background: #ff5722;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+}
+
+.hero-img img {
+  width: 400px;
+}
+
+/* Info Section */
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px;
+  background: #f5f5f5;
+}
+
+.info img {
+  width: 120px;
+}
+
+/* Team Section */
+.team {
+  padding: 60px;
+  text-align: center;
+}
+
+.team h2 {
+  margin-bottom: 30px;
+}
+
+.team-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.card img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Pricing */
+.pricing {
+  background: #f9f9f9;
+  padding: 60px;
+  text-align: center;
+}
+
+.pricing-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.price-card {
+  background: #fff;
+  padding: 30px;
+  width: 250px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.price-card.featured {
+  background: #222;
+  color: #fff;
+}
+
+.price-card button {
+  margin-top: 15px;
+  background: #ff5722;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+/* ---------------- PAGE CONTENT ---------------- */
+.page-content {
+  width: 90%;
+  margin: auto;
+  padding: 50px 0;
+  text-align: center;
+  color:#111;
+}
+
+.page-content h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.page-content p {
+  max-width: 700px;
+  margin: auto;
+  color: #666;
+  font-size: 18px;
+}form input,
+form textarea {
+  width: 50%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+  transition: border 0.3s;
+}
+
+form input:focus,
+form textarea:focus {
+  border: 1px solid #ff6f61;
+}
+
+form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+form button {
+  width: 50%;
+  padding: 12px;
+  background: orangered;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: black;
+}
+
+
+/* ---------------- ABOUT PAGE ---------------- */
+.about-section {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about-section img {
+  width: 350px;
+  border-radius: 10px;
+}
+
+.about-text {
+  max-width: 500px;
+  text-align: left;
+}
+
+.about-text ul {
+  margin-top: 15px;
+}
+
+.about-text li {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+/* ---------------- CATEGORIES ---------------- */
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.cat-card {
+  height: 350px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+.cat-card img {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.cat-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ---------------- SERVICES ---------------- */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.service-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.service-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ---------------- CONTACT ---------------- */
+.contact-form {
+  max-width: 600px;
+  margin: 40px auto;
+  text-align: left;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.contact-form button {
+  width: 100%;
+}
+
+/* ---------------- FOOTER ---------------- */
+.footer {
+  background: #111;
+  color: #fff;
+  padding: 40px 10%;
+  margin-top: 50px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer h3, .footer h4 {
+  color: #ff5722;
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-links ul li {
+  margin: 8px 0;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #ff5722;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  border-top: 1px solid #333;
+  padding-top: 10px;
+}
+
+
+
+/* ---------------- RESPONSIVE ---------------- */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+}
+/* ===================== Responsive Design ===================== */
+
+/* Tablets (max 1024px) */
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .hero-text {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 36px;
+  }
+
+  .hero-img img {
+    width: 300px;
+  }
+
+  .info {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .team-cards,
+  .pricing-cards {
+    flex-wrap: wrap;
+  }
+
+  .card,
+  .price-card {
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+  }
+}
+
+/* Mobile (max 768px) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #111;
+    padding: 20px;
+    border-radius: 8px;
+    gap: 15px;
+    width: 200px;
+    z-index: 999;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+    font-size: 28px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .hero-text h1 {
+    font-size: 28px;
+  }
+
+  .hero-img img {
+    width: 220px;
+  }
+
+  .info {
+    padding: 20px;
+  }
+
+  .team,
+  .pricing {
+    padding: 40px 20px;
+  }
+}
+
+/* Small Phones (max 480px) */
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 24px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+  }
+
+  .hero-img img {
+    width: 180px;
+  }
+
+  .card img {
+    width: 100px;
+  }
+
+  .price-card {
+    padding: 20px;
+    width: 90%;
+  }
+}
